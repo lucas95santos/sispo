@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -84,11 +83,28 @@
             <div class="container">
                 <h2 class="text-center">Mande sua dúvida</h2>
                 <div class="row">
-                    <div class="col-6" style="border: 1px solid">
-                        <p>Email para contato:</p>
-                        <p>contato@sispo.com.br</p>
+                    <div class="col-4">
+                        <p class="paragraph-section-contato">Email</p>
+                        <div class="row paragraph2-section-contato">
+                            <div class="col-auto">
+                                <span class="far fa-envelope"></span>
+                            </div>
+                            <div class="col-auto">
+                                <p>contato@sispo.com.br</p>
+                            </div>
+                        </div>
+
+                        <p class="paragraph-section-contato">Telefone</p>
+                        <div class="row paragraph2-section-contato">
+                            <div class="col-auto">
+                                <span class="fas fa-phone"></span>
+                            </div>
+                            <div class="col-auto">
+                                <p>11 4140-8992</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-8">
                         <form class="form-contato" action="#" method="post">
                             <div class="row">
                                 <div class="col-6">
@@ -116,7 +132,7 @@
                                 <label class="font-weight-bold" for="message">Digite sua mensagem aqui</label>
                                 <textarea class="form-control" id="message" name="message" rows="3"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-info">Enviar</button>
+                            <button type="submit" class="btn btn-info btn-contato">Enviar</button>
                         </form>
                     </div>
                 </div>
