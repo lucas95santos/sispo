@@ -1,7 +1,7 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark navbar-color">
+<nav id="navbar-standard" class="navbar fixed-top navbar-expand-lg navbar-dark navbar-transparent">
     <div class="container">
         <a class="navbar-brand" href="#topo" title="Sispo | Sistema de Planejamento Orçamentário">
-            <div class="row nav-brand-text-link">
+            <div class="row nav-text-link">
                 <div class="col">
                     <img src="assets/images/sispo-50x50.png" alt="Logo Sispo"/>
                 </div>
@@ -16,7 +16,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link nav-text-link" href="#sobre" title="Sobre o Sispo">Sobre</a>
+                    <a class="nav-link nav-text-link" href="#detalhes" title="Detalhes sobre o sistema">Detalhes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-text-link" href="#missao" title="Nossa missão">Nosso missão</a>

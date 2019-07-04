@@ -1,12 +1,13 @@
 /* Document text CSS */
 body {
-    background-color: #f5f5f5;
+    background-color: #fff;
 }
 
 /***************** Landing page *****************/
 
 /******************** Navbar ********************/
 .nav-text-link {
+    padding: 3px;
     color: #fff !important;
     border-bottom: 2px solid transparent;
     font-family: Oswald;
@@ -14,25 +15,15 @@ body {
 }
 
 .nav-text-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-bottom: 2px solid #fff;
-}
-
-.nav-brand-text-link {
-    padding: 3px;
-    color: #fff;
-    border-bottom: 2px solid transparent;
-    font-family: Oswald;
-    letter-spacing: 1.5px;
-}
-
-.nav-brand-text-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
     border-bottom: 2px solid #fff;
 }
 
 .navbar-color {
-    background-color: rgba(5, 40, 71, 0.6) !important;
+    background-color: #052847 !important;
+}
+
+.navbar-transparent {
+    background-color: transparent !important; /*rgba(5, 40, 71, 0.6)*/
 }
 
 /******************** Header ********************/
@@ -152,6 +143,82 @@ body {
     }
 }
 
+/******************** Sections ********************/
+
+.section-detalhes {
+    margin-top: 50px;
+    margin-bottom: 150px;
+    padding-top: 50px;
+}
+
+.section-missao {
+    background-color: #052847;
+    background-image: linear-gradient(#052847, #01579b);
+    color: #fff;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+.section-contato {
+    padding-top: 20px;
+    margin-bottom: 150px;
+    color: #052847 !important;
+}
+
+.title-section-1 {
+    font-family: Catamaran;
+    font-size: 40px;
+    line-height: 35px;
+    font-weight: 600;
+    color: #052847;
+}
+
+.span-title-section-1 {
+    font-family: Catamaran;
+    font-size: 32px;
+    line-height: 35px;
+    font-weight: 500;
+    color: #777;
+}
+
+.paragraph-section-1 {
+    font-family: Catamaran;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 500;
+    color: #00505f;
+}
+
+.paragraph-section-2 {
+    margin-top: 70px;
+    font-family: Oswald;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.img-section-1 {
+    margin: 100px 0 35px 0;
+}
+
+.paragraph2-section-1 {
+    font-family: Catamaran;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #052847;
+}
+
+.padding-section-1 {
+    padding: 0 40px 0 40px;
+}
+
+.form-contato {
+    margin-top: 60px;
+}
+
 /******************** Footer ********************/
 
 .footer-copyright {
@@ -181,6 +248,13 @@ body {
     font-weight: 300;
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(51, 51, 51, 0.08);
+}
+
+/******************** Fonts ********************/
+
+.font-oswald {
+    font-family: Oswald;
+    letter-spacing: 1px;
 }
 
 .font-footer {
