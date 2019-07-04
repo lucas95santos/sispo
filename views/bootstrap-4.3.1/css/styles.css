@@ -1,0 +1,192 @@
+/* Document text CSS */
+body {
+    background-color: #f5f5f5;
+}
+
+/***************** Landing page *****************/
+
+/******************** Navbar ********************/
+.nav-text-link {
+    color: #fff !important;
+    border-bottom: 2px solid transparent;
+    font-family: Oswald;
+    letter-spacing: 1.5px;
+}
+
+.nav-text-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid #fff;
+}
+
+.nav-brand-text-link {
+    padding: 3px;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    font-family: Oswald;
+    letter-spacing: 1.5px;
+}
+
+.nav-brand-text-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid #fff;
+}
+
+.navbar-color {
+    background-color: rgba(5, 40, 71, 0.6) !important;
+}
+
+/******************** Header ********************/
+
+.bg-header {
+    background-image: url("http://localhost/sispo-v1/assets/images/bg-header3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 364px;
+    display: block;
+}
+
+#overlay {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 364px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    background-color: rgba(5, 40, 71, 0.4) !important;
+    z-index: 1000;
+}
+
+.header-container {
+    position: relative;
+    float: left;
+    margin-top: 100px;
+    color: #eeeeee;
+}
+
+.header-title {
+    font-family: Catamaran;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.header-text {
+    font-family: Catamaran;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.margin-btn-cadastro {
+    margin-top: 30px
+}
+
+.btn-cadastro {
+    width: 150px;
+    height: 30px;
+    font-family: Catamaran;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        position: relative;
+        float: left;
+        margin-top: 200px;
+        color: #eeeeee;
+    }
+
+    .header-title {
+        font-family: Catamaran;
+        font-size: 60px;
+        line-height: 70px;
+        font-weight: 600;
+    }
+
+    .header-text {
+        font-family: Catamaran;
+        font-size: 35px;
+        line-height: 45px;
+        font-weight: 500;
+    }
+
+    .bg-header {
+        background-image: url("http://localhost/sispo-v1/assets/images/bg-header3.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 664px;
+        display: block;
+    }
+
+    #overlay {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 664px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 1;
+        background-color: rgba(5, 40, 71, 0.4) !important;
+        z-index: 1000;
+    }
+
+    .margin-btn-cadastro {
+        margin-top: 50px
+    }
+
+    .btn-cadastro {
+        width: 200px;
+        height: 50px;
+        font-family: Catamaran;
+        font-size: 20px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+}
+
+/******************** Footer ********************/
+
+.footer-copyright {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    width: 100%;
+    height: 60px;
+}
+
+.page-footer {
+    padding-top: 20px;
+    color: #fff;
+    background-color: rgba(5, 40, 71, 1) !important;
+}
+
+.page-footer .footer-copyright {
+    overflow: hidden;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 0;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(51, 51, 51, 0.08);
+}
+
+.font-footer {
+    font-family: Oswald, Helvetica;
+    letter-spacing: 1px;
+    font-weight: 200 !important;
+    font-size: 22px;
+    color: #fff !important;
+}
