@@ -4,6 +4,7 @@
         <?php
         require 'includes/head.php';
         ?>
+        <title>Sispo | Sistema de Planejamento Orçamentário</title>
     </head>
     <body>
         <?php
@@ -17,7 +18,7 @@
                         <h1 class="header-title">Rápido e Simples</h1>
                         <h1 class="header-text">Sispo é um site feito com o intuito de lhe ajudar com todas as suas finanças e gastos. Em apenas alguns cliques suas finanças estarão todas organizadas.</h1>
                         <div class="text-center margin-btn-cadastro">
-                            <a class="btn btn-info btn-cadastro" href="#" title="Cadastre-se no Sispo">Cadastre-se hoje</a>
+                            <a class="btn btn-info btn-cadastro" href="index.php?section=usuario&action=cadastro" title="Cadastre-se no Sispo">Cadastre-se hoje</a>
                         </div>
                     </div>
                 </div>
@@ -173,27 +174,16 @@
                         <p class="cadastro-title">Não perca mais tempo!</p>
                         <p class="cadastro-text">Faça agora mesmo o seu cadastro e fique no controle de suas finanças.</p>
                         <div class="text-center margin-btn-cadastro">
-                            <a class="btn btn-info btn-cadastro" href="#" title="Cadastre-se no Sispo">Cadastre-se hoje</a>
+                            <a class="btn btn-info btn-cadastro" href="index.php?section=usuario&action=cadastro" title="Cadastre-se no Sispo">Cadastre-se hoje</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer class="page-footer">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-8">
-                        <p><a class="navbar-brand font-footer" href="#">Sispo | Sistema de Planejamento Orçamentário</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    <span class="d-block mb-3">&copy; 2019 Todos os direitos reservados</span>
-                </div>
-            </div>
-        </footer>
+        <?php
+        require 'includes/footer.php';
+        ?>
 
         <script type="text/javascript" src="views/bootstrap-4.3.1/js/jquery.js"></script>
         <script type="text/javascript" src="views/bootstrap-4.3.1/js/bootstrap.min.js"></script>

@@ -30,7 +30,7 @@
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a id="link" class="nav-link nav-text-link" href="#" title="Realiza o login">Login</a>
+                    <a id="link" class="nav-link nav-text-link" href="index.php?section=usuario&action=login" title="Realiza o login">Login</a>
                 </li>
             </ul>
         </div>

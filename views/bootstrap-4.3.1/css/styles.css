@@ -3,8 +3,6 @@ body {
     background-color: #fff;
 }
 
-/***************** Landing page *****************/
-
 /******************** Navbar ********************/
 .nav-text-link {
     padding: 3px;
@@ -26,6 +24,54 @@ body {
     background-color: transparent !important; /*rgba(5, 40, 71, 0.6)*/
 }
 
+/******************** Footer ********************/
+
+.footer-copyright {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    width: 100%;
+    height: 60px;
+}
+
+.page-footer {
+    padding-top: 20px;
+    color: #fff;
+    background-color: rgba(5, 40, 71, 1) !important;
+}
+
+.page-footer .footer-copyright {
+    overflow: hidden;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 0;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(51, 51, 51, 0.08);
+}
+
+/******************** Fonts ********************/
+
+.font-oswald {
+    font-family: Oswald;
+    letter-spacing: 1px;
+}
+
+.font-footer {
+    font-family: Oswald, Helvetica;
+    letter-spacing: 1px;
+    font-weight: 200 !important;
+    font-size: 22px;
+    color: #fff !important;
+}
+
+/********************************** Landing page **********************************/
+
 /******************** Header ********************/
 
 .bg-header {
@@ -39,9 +85,10 @@ body {
 
 #overlay {
     position: absolute;
+    background-attachment: fixed;
     display: block;
     width: 100%;
-    height: 364px;
+    height: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -117,9 +164,10 @@ body {
 
     #overlay {
         position: absolute;
+        background-attachment: fixed;
         display: block;
         width: 100%;
-        height: 664px;
+        height: 100%;
         top: 0;
         left: 0;
         right: 0;
@@ -294,52 +342,6 @@ body {
     font-weight: 500;
 }
 
-/******************** Footer ********************/
-
-.footer-copyright {
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    width: 100%;
-    height: 60px;
-}
-
-.page-footer {
-    padding-top: 20px;
-    color: #fff;
-    background-color: rgba(5, 40, 71, 1) !important;
-}
-
-.page-footer .footer-copyright {
-    overflow: hidden;
-    min-height: 50px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 10px 0;
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(51, 51, 51, 0.08);
-}
-
-/******************** Fonts ********************/
-
-.font-oswald {
-    font-family: Oswald;
-    letter-spacing: 1px;
-}
-
-.font-footer {
-    font-family: Oswald, Helvetica;
-    letter-spacing: 1px;
-    font-weight: 200 !important;
-    font-size: 22px;
-    color: #fff !important;
-}
-
 /******************** Animação ********************/
 
 .anime {
@@ -352,3 +354,109 @@ body {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
+
+/****************************** Fim Landing page ********************************/
+
+/******************************  Tela de Cadastro   ********************************/
+
+.bg-cadastro {
+    background-image: url("http://localhost/sispo-v1/assets/images/bg-header3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100% !important;
+    display: block;
+}
+
+#overlay-cadastro {
+    position: absolute;
+    background-attachment: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    background-color: rgba(5, 40, 71, 0.4) !important;
+    z-index: 1000;
+}
+
+.container-cadastro {
+    margin-top: 130px;
+}
+
+.card-cadastro {
+    background-color: rgba(255, 255, 255, 1) !important;
+    color: #00505f !important;
+    font-family: Catamaran;
+    height: auto;
+    padding: 20px;
+}
+
+.title-cadastro {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.btn-cadastro2 {
+    width: 150px;
+    height: 40px;
+    font-family: Catamaran;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/******************************  Fim Tela de Cadastro   ********************************/
+
+/******************************    Tela de Login     ********************************/
+
+.bg-login {
+    background-image: url("http://localhost/sispo-v1/assets/images/bg-header3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100% !important;
+    display: block;
+}
+
+#overlay-login {
+    position: absolute;
+    background-attachment: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    background-color: rgba(5, 40, 71, 0.4) !important;
+    z-index: 1000;
+}
+
+.container-login {
+    margin-top: 150px;
+}
+
+.title-login {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.btn-login {
+    width: 150px;
+    height: 40px;
+    font-family: Catamaran;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/******************************    Fim Tela de Login     ********************************/

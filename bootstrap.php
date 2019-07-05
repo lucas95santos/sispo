@@ -6,5 +6,6 @@ session_start();
 // controllers
 require 'controllers/AbstractController.php';
 require 'controllers/LandingPageController.php';
+require 'controllers/UsuarioController.php';
 // aplicação principal
 require 'App.php';
