@@ -19,7 +19,7 @@
                     <a class="nav-link nav-text-link anchor" href="#detalhes" title="Detalhes sobre o sistema">Detalhes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-text-link anchor" href="#funcionalidades" title="Funcionalidas do sistema">Funcionlidades</a>
+                    <a class="nav-link nav-text-link anchor" href="#funcionalidades" title="Funcionalidas do sistema">Funcionalidades</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-text-link anchor" href="#missao" title="Nossa missão">Nossa missão</a>
