@@ -19,6 +19,9 @@
                     <a class="nav-link nav-text-link" href="#detalhes" title="Detalhes sobre o sistema">Detalhes</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link nav-text-link" href="#funcionalidades" title="Funcionalidas do sistema">Funcionlidades</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link nav-text-link" href="#missao" title="Nossa missão">Nossa missão</a>
                 </li>
                 <li class="nav-item">

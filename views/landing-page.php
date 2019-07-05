@@ -34,25 +34,62 @@
             </div>
         </header>
 
-        <!---->
+        <!-- Seção detalhes -->
         <section id="detalhes" class="section-detalhes">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="title-section-1">Um endereço. <span class="span-title-section-1">Todas as suas finanças.</span></h2>
-                    <p class="paragraph-section-1">Não faça parte de 62% das famílias brasileiras endividadas e controle suas finanças.</p>
+                    <h2 class="title-section-detalhes">Um endereço. <span class="span-title-section-detalhes">Todas as suas finanças.</span></h2>
+                    <p class="paragraph-section-detalhes">Não faça parte de 62% das famílias brasileiras endividadas e controle suas finanças.</p>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 text-center padding-section-1">
-                        <img src="assets/icones/money.png" class="img-fluid img-section-1" alt="Organização"/>
-                        <p class="paragraph2-section-1">Tenha controle sobre os seus gastos de forma prática e rápida</p>
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 text-center padding-section-detalhes">
+                        <img src="assets/icones/money.png" class="img-fluid img-section-detalhes" alt="Organização"/>
+                        <p class="paragraph2-section-detalhes">Tenha controle sobre os seus gastos de forma prática e rápida</p>
                     </div>
-                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 text-center padding-section-1">
-                        <img src="assets/icones/organize.png" class="img-fluid img-section-1" alt="Organização"/>
-                        <p class="paragraph2-section-1">Tenha todas as informações organizadas em um só lugar</p>
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 text-center padding-section-detalhes">
+                        <img src="assets/icones/organize.png" class="img-fluid img-section-detalhes" alt="Organização"/>
+                        <p class="paragraph2-section-detalhes">Tenha todas as informações organizadas em um só lugar</p>
                     </div>
-                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 text-center padding-section-1">
-                        <img src="assets/icones/consumer.png" class="img-fluid img-section-1" alt="Organização"/>
-                        <p class="paragraph2-section-1">Saiba tudo o que acontece e não tenha surpresas no fim do mês</p>
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 text-center padding-section-detalhes">
+                        <img src="assets/icones/consumer.png" class="img-fluid img-section-detalhes" alt="Organização"/>
+                        <p class="paragraph2-section-detalhes">Saiba tudo o que acontece e não tenha surpresas no fim do mês</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- Seção funcionalidades -->
+        <section id="funcionalidades" class="section-funcionalidades">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="title-section-funcionalidades">O que o Sispo tem a oferecer?</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 text-center">
+                        <img src="assets/icones/receitas.png" class="img-fluid img-section-funcionalidades" alt="Receitas"/>
+                        <p class="paragraph-section-funcionalidades">Registre e altere as suas receitas</p>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 text-center">
+                        <img src="assets/icones/despesas.png" class="img-fluid img-section-funcionalidades" alt="Despesas"/>
+                        <p class="paragraph-section-funcionalidades">Cadastre todas as suas despesas</p>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 text-center">
+                        <img src="assets/icones/contas.png" class="img-fluid img-section-funcionalidades" alt="Contas"/>
+                        <p class="paragraph-section-funcionalidades">Gerencie e fique no controle das suas contas</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 text-center">
+                        <img src="assets/icones/graficos.png" class="img-fluid img-section-funcionalidades" alt="Organização"/>
+                        <p class="paragraph-section-funcionalidades">Veja gráficos atualizados das suas transações</p>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 text-center">
+                        <img src="assets/icones/relatorio.png" class="img-fluid img-section-funcionalidades" alt="Organização"/>
+                        <p class="paragraph-section-funcionalidades">Visualize e imprima relatórios</p>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 text-center">
+                        <img src="assets/icones/aviso.png" class="img-fluid img-section-funcionalidades" alt="Organização"/>
+                        <p class="paragraph-section-funcionalidades">Receba avisos para ficar sempre informado</p>
                     </div>
                 </div>
             </div>
@@ -67,7 +104,7 @@
                     </div>
                     <div class="col-6">
                         <h2 class="text-right font-oswald">Nossa missão</h2>
-                        <p class="paragraph-section-2">
+                        <p class="paragraph-section-missao">
                             O sistema <strong>Sispo</strong> visa ajudar o usuário a ter um maior controle de suas finanças.
                             Verificando se as receitas e despesas geradas pelo seu patrimônio e seus dependentes são compatíveis com suas necessidades atuais e futuras.
                             Por este motivo o sistema pretende trazer uma interface limpa e agradável ao usuário onde ele possa ter uma visão ampla de seus gastos diários,
