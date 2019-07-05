@@ -176,6 +176,20 @@
             </div>
         </section>
 
+        <section class="section-cadastro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="cadastro-title">Não perca mais tempo!</p>
+                        <p class="cadastro-text">Faça agora mesmo o seu cadastro e fique no controle de suas finanças.</p>
+                        <div class="text-center margin-btn-cadastro">
+                            <a class="btn btn-info btn-cadastro" href="#" title="Cadastre-se no Sispo">Cadastre-se hoje</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <footer class="page-footer">
             <div class="container">
                 <div class="row justify-content-between">
