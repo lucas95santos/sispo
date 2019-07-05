@@ -1,5 +1,7 @@
-$('nav a').click(function (element) {
-    element.preventDefault();
+$('.anchor').click(function (element) {
+    if (element !== 'link') {
+        element.preventDefault();
+    }
     var id = $(this).attr('href'),
         targetOffset = $(id).offset().top,
         menuHeight = $('nav').innerHeight();
