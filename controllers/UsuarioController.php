@@ -25,23 +25,41 @@ class UsuarioController extends AbstractController {
     }
 
     private function cadastrarAction() {
-        $dataNascimento = $_POST['ano'] . '-' . $_POST['mes'] . '-' . $_POST['dia'];
+        if ($this->usuarioFactory->emailExists($_POST['email']) === true) {
+            $_SESSION['email_exists'] = [
+                'status' => 1,
+                'nome' => $_POST['nome'],
+                'sobrenome' => $_POST['sobrenome'],
+                'dia' => $_POST['dia'],
+                'mes' => $_POST['mes'],
+                'ano' => $_POST['ano'],
+                'sexo' => $_POST['sexo']
+            ];
+            $this->redirect('usuario', 'cadastro');
+        }
+        else {
+            $dataNascimento = $_POST['ano'] . '-' . $_POST['mes'] . '-' . $_POST['dia'];
 
-        date_default_timezone_set('America/Sao_Paulo');
-        $dataCriacao = date("Y-m-d");
+            date_default_timezone_set('America/Sao_Paulo');
+            $dataCriacao = date("Y-m-d");
 
-        $values = [
-            'nome' => $_POST['nome'],
-            'sobrenome' => $_POST['sobrenome'],
-            'data_nascimento' => $dataNascimento,
-            'sexo' => $_POST['sexo'],
-            'email' => $_POST['email'],
-            'senha' => md5($_POST['senha']),
-            'data_criacao' => $dataCriacao
-        ];
+            $values = [
+                'nome' => $_POST['nome'],
+                'sobrenome' => $_POST['sobrenome'],
+                'data_nascimento' => $dataNascimento,
+                'sexo' => $_POST['sexo'],
+                'email' => $_POST['email'],
+                'senha' => md5($_POST['senha']),
+                'data_criacao' => $dataCriacao
+            ];
 
-        $this->usuarioFactory->insert($values);
-        $this->redirect('usuario', 'login');
+            $this->usuarioFactory->insert($values);
+            $_SESSION['cadastro_ok'] = [
+                'status' => 1,
+                'nome' => $_POST['nome']
+            ];
+            $this->redirect('usuario', 'login');
+        }
     }
 
     private function entrarAction() {
@@ -61,7 +79,10 @@ class UsuarioController extends AbstractController {
             ];
             $this->redirect('dashboard', 'index');
         }
-        $this->redirect('usuario', 'login');
+        else {
+            $_SESSION['login_failed'] = 1;
+            $this->redirect('usuario', 'login');
+        }
     }
 
     protected function handleRequest() {

@@ -21,20 +21,44 @@ namespace sispo\views;
                         <div class="col-10 offset-1">
                             <div class="card card-cadastro">
                                 <div class="card-body">
+                                    <?php
+                                    $emailExists = false;
+                                    if (isset($_SESSION['email_exists']) && $_SESSION['email_exists']['status'] === 1) {
+                                        $emailExists = true;
+                                        $nome = $_SESSION['email_exists']['nome']; $sobrenome = $_SESSION['email_exists']['sobrenome'];
+                                        $dia = $_SESSION['email_exists']['dia']; $mes = $_SESSION['email_exists']['mes'];
+                                        $ano = $_SESSION['email_exists']['ano']; $sexo = $_SESSION['email_exists']['sexo'];
+                                    ?>
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        O email informado já existe na base de dados!
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <?php
+                                    }
+                                    unset($_SESSION['email_exists']);
+                                    ?>
                                     <h1 class="title-cadastro">Cadastre-se no Sispo</h1>
-                                    <hr>
+                                    <hr/>
                                     <form action="index.php?section=usuario&action=cadastrar" method="post">
                                         <div class="row">
                                             <div class="col-6">
                                                 <div class="form-group">
                                                     <label class="font-weight-bold" for="nome">Nome</label>
-                                                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
+                                                    <input type="text" class="form-control" id="nome" name="nome"
+                                                           value="<?= $emailExists ? $nome : ''?>"
+                                                           placeholder="Digite seu nome" required autocomplete="none"
+                                                    >
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="form-group">
                                                     <label class="font-weight-bold" for="sobrenome">Sobrenome</label>
-                                                    <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required>
+                                                    <input type="text" class="form-control" id="sobrenome" name="sobrenome"
+                                                           value="<?= $emailExists ? $sobrenome : ''?>"
+                                                           placeholder="Digite seu sobrenome" required autocomplete="none"
+                                                    >
                                                 </div>
                                             </div>
                                         </div>
@@ -45,7 +69,7 @@ namespace sispo\views;
                                                     <div class="col">
                                                         <div class="form-group">
                                                             <select class="form-control" name="dia">
-                                                                <option selected>Dia</option>
+                                                                <option selected><?= $emailExists ? $dia : 'Dia'?></option>
                                                                 <?php
                                                                 for ($i=1; $i<=31; $i++) {
                                                                     if ($i<10) {
@@ -65,13 +89,15 @@ namespace sispo\views;
                                                     </div>
                                                     <div class="col">
                                                         <div class="form-group">
+                                                            <?php
+                                                            $meses = [
+                                                                'Janeiro','Fevereiro','Março','Abril','Maio','Junho',
+                                                                'Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'
+                                                            ];
+                                                            ?>
                                                             <select class="form-control" name="mes">
-                                                                <option selected>Mês</option>
+                                                                <option value="<?= $emailExists ? $mes : ''?>" selected><?= $emailExists ? $meses[$mes-1] : 'Mês'?></option>
                                                                 <?php
-                                                                $meses = [
-                                                                    'Janeiro','Fevereiro','Março','Abril','Maio','Junho',
-                                                                    'Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'
-                                                                ];
                                                                 for ($i=0; $i<12; $i++) {
                                                                 ?>
                                                                     <option value="<?=$i+1?>"><?=$meses[$i]?></option>
@@ -84,7 +110,7 @@ namespace sispo\views;
                                                     <div class="col">
                                                         <div class="form-group">
                                                             <select class="form-control" name="ano">
-                                                                <option selected>Ano</option>
+                                                                <option selected><?= $emailExists ? $ano : 'Ano'?></option>
                                                                 <?php
                                                                 for ($i=1900; $i<=date('Y'); $i++) {
                                                                 ?>
@@ -101,6 +127,9 @@ namespace sispo\views;
                                                 <label class="font-weight-bold" for="sexo">Sexo</label>
                                                 <div class="row">
                                                     <div class="col">
+                                                        <?php
+                                                        if (!$emailExists) {
+                                                        ?>
                                                         <div class="form-check form-check-inline">
                                                             <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino">
                                                             <label class="form-check-label" for="masculino">Masculino</label>
@@ -109,6 +138,35 @@ namespace sispo\views;
                                                             <input class="form-check-input" type="radio" name="sexo" id="feminino" value="feminino">
                                                             <label class="form-check-label" for="feminino">Feminino</label>
                                                         </div>
+                                                        <?php
+                                                        }
+                                                        else {
+                                                            if ($sexo === 'masculino') {
+                                                        ?>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino" checked>
+                                                                <label class="form-check-label" for="masculino">Masculino</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="sexo" id="feminino" value="feminino">
+                                                                <label class="form-check-label" for="feminino">Feminino</label>
+                                                            </div>
+                                                        <?php
+                                                            }
+                                                             else {
+                                                        ?>
+                                                             <div class="form-check form-check-inline">
+                                                                 <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino">
+                                                                 <label class="form-check-label" for="masculino">Masculino</label>
+                                                             </div>
+                                                             <div class="form-check form-check-inline">
+                                                                 <input class="form-check-input" type="radio" name="sexo" id="feminino" value="feminino" checked>
+                                                                 <label class="form-check-label" for="feminino">Feminino</label>
+                                                             </div>
+                                                        <?php
+                                                             }
+                                                        }
+                                                        ?>
                                                     </div>
                                                 </div>
                                             </div>
@@ -117,7 +175,7 @@ namespace sispo\views;
                                             <div class="col-6">
                                                 <div class="form-group">
                                                     <label class="font-weight-bold" for="email">E-mail</label>
-                                                    <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu melhor e-mail" required>
+                                                    <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu melhor e-mail" required autocomplete="none">
                                                 </div>
                                             </div>
                                             <div class="col-6">
@@ -137,7 +195,7 @@ namespace sispo\views;
                                                 </div>
                                             </div>
                                         </div>
-                                        <br>
+                                        <br/>
                                         <div class="row justify-content-center">
                                             <div class="col-auto">
                                                 <button type="submit" class="btn btn-info btn-cadastro2">Cadastrar</button>

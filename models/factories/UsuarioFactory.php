@@ -49,6 +49,14 @@ class UsuarioFactory extends AbstractFactory {
         $statement->execute();
     }
 
+    public function emailExists($email) {
+        $sql = "SELECT id FROM usuario WHERE email = '{$email}'";
+        $result = $this->db->query($sql);
+        if ($result->fetch())
+            return true;
+        return false;
+    }
+
     public function selectAll() {
         $sql = "SELECT id, nome, sobrenome, data_nascimento, sexo, email, senha, data_criacao FROM usuario WHERE status = 'ativo'";
         $result = $this->db->query($sql);
