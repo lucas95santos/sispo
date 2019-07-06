@@ -71,6 +71,17 @@ class UsuarioFactory extends AbstractFactory {
         return $usuario;
     }
 
+    public function selectByLogin($email, $senha) {
+        $sql = "SELECT * FROM usuario WHERE email = '{$email}' AND senha = '{$senha}'";
+        $result = $this->db->query($sql);
+        $usuario = null;
+        foreach($result as $row) {
+            $usuario = new Usuario($row['nome'], $row['sobrenome'], $row['data_nascimento'], $row['sexo'], $row['email'], $row['senha'], $row['data_criacao']);
+            $usuario->setId($row['id']);
+        }
+        return $usuario;
+    }
+
     public function update($values) {
         // TODO: Implement update() method.
     }

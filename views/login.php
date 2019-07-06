@@ -1,3 +1,6 @@
+<?php
+namespace sispo\views;
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -23,7 +26,7 @@
                                     <form action="index.php?section=usuario&action=entrar" method="post">
                                         <div class="form-group">
                                             <label class="font-weight-bold" for="email">E-mail</label>
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required autofocus>
                                         </div>
 
                                         <div class="form-group">

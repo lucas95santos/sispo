@@ -9,5 +9,7 @@ require 'models/factories/UsuarioFactory.php';
 require 'controllers/AbstractController.php';
 require 'controllers/LandingPageController.php';
 require 'controllers/UsuarioController.php';
+// authenticatedControllers
+require 'controllers/authenticatedControllers/DashboardUsuarioController.php';
 // aplicação principal
 require 'App.php';

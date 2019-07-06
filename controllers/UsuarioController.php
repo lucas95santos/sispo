@@ -44,12 +44,35 @@ class UsuarioController extends AbstractController {
         $this->redirect('usuario', 'login');
     }
 
+    private function entrarAction() {
+        $email = $_POST['email'];
+        $senha = md5($_POST['senha']);
+
+        if (empty($email) || empty($senha))
+            $this->redirect('usuario', 'login');
+
+        $usuario = $this->usuarioFactory->selectByLogin($email, $senha);
+
+        if ($usuario) {
+            $_SESSION['usuario_autenticado'] = [
+                'authenticated' => 1,
+                'id' => $usuario->getId(),
+                'nome' => $usuario->getNome()
+            ];
+            $this->redirect('dashboard', 'index');
+        }
+        $this->redirect('usuario', 'login');
+    }
+
     protected function handleRequest() {
         $action = isset($_GET['action']) ? $_GET['action'] : 'index';
 
         switch ($action) {
             case 'login':
                 $this->loginAction();
+                break;
+            case 'entrar':
+                $this->entrarAction();
                 break;
             case 'cadastro':
                 $this->cadastroAction();

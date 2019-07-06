@@ -1,3 +1,6 @@
+<?php
+namespace sispo\views;
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
