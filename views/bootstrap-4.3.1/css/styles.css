@@ -5,15 +5,15 @@ body {
 
 /******************** Navbar ********************/
 .nav-text-link {
-    padding: 3px;
+    padding: 5px 8px 5px 8px;
     color: #fff !important;
-    border-bottom: 2px solid transparent;
     font-family: Oswald;
     letter-spacing: 1.5px;
 }
 
 .nav-text-link:hover {
-    border-bottom: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
 }
 
 .navbar-color {
@@ -51,6 +51,10 @@ body {
 
 .margin-item-sidebar {
     margin-left: -15px
+}
+
+.bg-dropdown {
+    background-color: #052847;
 }
 /******************** Sidebar ********************/
 

@@ -16,29 +16,59 @@
                                 <img src="assets/icones/add.png" alt="Novo movimento">
                             </div>
                             <div class="col-auto margin-item-sidebar">
-                                Novo
+                                Novo movimento
                             </div>
                         </div>
                     </a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle nav-text-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Contas
+                <li class="nav-item">
+                    <a id="link" class="nav-link nav-text-link" href="#" title="Adicionar nova conta">
+                        <div class="row">
+                            <div class="col-auto">
+                                <img src="assets/icones/plus.png" alt="Nova conta">
+                            </div>
+                            <div class="col-auto margin-item-sidebar">
+                                Nova conta
+                            </div>
+                        </div>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Nova conta</a>
-                        <a class="dropdown-item" href="#">Altarar conta</a>
-                    </div>
                 </li>
                 <li class="nav-item dropdown" style="margin-right: 60px;">
                     <a class="nav-link dropdown-toggle nav-text-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <?= $_SESSION['usuario_autenticado']['nome'] ?>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Perfil</a>
-                        <a class="dropdown-item" href="#">Configurações</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="index.php?section=dashboard&action=logout">Logout</a>
+                    <div class="dropdown-menu bg-dropdown" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item nav-text-link" href="#" title="Perfil de usuário">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="assets/icones/user.png" alt="Perfil de usuário">
+                                </div>
+                                <div class="col-auto margin-item-sidebar">
+                                    Perfil
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item nav-text-link" href="#" title="Configurações do sistema">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="assets/icones/settings.png" alt="Configurações do sistema">
+                                </div>
+                                <div class="col-auto margin-item-sidebar">
+                                    Configurações
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider" style="color: #fff;"></div>
+                        <a class="dropdown-item nav-text-link" href="index.php?section=dashboard&action=logout" title="Sair do sistema">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="assets/icones/sair.png" alt="Sair do sistema">
+                                </div>
+                                <div class="col-auto margin-item-sidebar">
+                                    Sair
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </li>
             </ul>
