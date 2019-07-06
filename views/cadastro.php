@@ -24,14 +24,14 @@
                                         <div class="row">
                                             <div class="col-6">
                                                 <div class="form-group">
-                                                    <label class="font-weight-bold" for="name">Nome</label>
-                                                    <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome" required>
+                                                    <label class="font-weight-bold" for="nome">Nome</label>
+                                                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="form-group">
-                                                    <label class="font-weight-bold" for="last_name">Sobrenome</label>
-                                                    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Digite seu sobrenome" required>
+                                                    <label class="font-weight-bold" for="sobrenome">Sobrenome</label>
+                                                    <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -99,11 +99,11 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="sexo" id="masculino" value="MASCULINO">
+                                                            <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino">
                                                             <label class="form-check-label" for="masculino">Masculino</label>
                                                         </div>
                                                         <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio" name="sexo" id="feminino" value="FEMININO">
+                                                            <input class="form-check-input" type="radio" name="sexo" id="feminino" value="feminino">
                                                             <label class="form-check-label" for="feminino">Feminino</label>
                                                         </div>
                                                     </div>
@@ -151,5 +151,6 @@
 
         <script type="text/javascript" src="views/bootstrap-4.3.1/js/jquery.js"></script>
         <script type="text/javascript" src="views/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="views/bootstrap-4.3.1/js/validaSenha.js"></script>
     </body>
 </html>

@@ -8,11 +8,11 @@ class LandingPageController extends AbstractController {
         $this->handleRequest();
     }
 
-    public function indexAction() {
+    protected function indexAction() {
         require 'views/landing-page.php';
     }
 
-    public function handleRequest() {
+    protected function handleRequest() {
         $action = isset($_GET['action']) ? $_GET['action'] : 'index';
 
         switch ($action) {

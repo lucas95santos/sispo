@@ -4,6 +4,7 @@ namespace sispo\models;
 
 class Usuario {
 
+    private $id;
     private $nome;
     private $sobrenome;
     private $dataNascimento;
@@ -14,13 +15,22 @@ class Usuario {
     private $dataDesativacao;
     private $status;
 
-    public function __construct($nome, $sobrenome, $dataNascimento, $sexo, $email, $senha) {
+    public function __construct($nome, $sobrenome, $dataNascimento, $sexo, $email, $senha, $dataCriacao) {
         $this->nome = $nome;
         $this->sobrenome = $sobrenome;
         $this->dataNascimento = $dataNascimento;
+        $this->sexo = $sexo;
         $this->email = $email;
         $this->senha = $senha;
-        $this->sexo = $sexo;
+        $this->dataCriacao = $dataCriacao;
+    }
+
+    public function getId() {
+        return $this->id;
+    }
+
+    public function setId($id) {
+        $this->id = $id;
     }
 
     public function getNome() {
