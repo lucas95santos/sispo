@@ -2,16 +2,23 @@
   <dictionary name="lucas">
     <words>
       <w>alerta</w>
+      <w>altarar</w>
       <w>aplicação</w>
       <w>ativo</w>
       <w>autenticado</w>
       <w>cadastrar</w>
       <w>cadastro</w>
+      <w>configurações</w>
+      <w>conta</w>
+      <w>contas</w>
+      <w>controle</w>
       <w>credenciais</w>
       <w>credênciais</w>
       <w>criacao</w>
       <w>dados</w>
       <w>desativacao</w>
+      <w>entrada</w>
+      <w>entradas</w>
       <w>entrar</w>
       <w>entre</w>
       <w>estão</w>
@@ -27,8 +34,15 @@
       <w>logado</w>
       <w>masculino</w>
       <w>mostra</w>
+      <w>movimentações</w>
       <w>nascimento</w>
+      <w>novo</w>
+      <w>painel</w>
+      <w>perfil</w>
       <w>realizado</w>
+      <w>receitas</w>
+      <w>saída</w>
+      <w>saídas</w>
       <w>senha</w>
       <w>sexo</w>
       <w>sobrenome</w>
