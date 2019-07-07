@@ -23,5 +23,6 @@ namespace sispo\views\authenticated;
 
         <script type="text/javascript" src="views/bootstrap-4.3.1/js/jquery.js"></script>
         <script type="text/javascript" src="views/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="views/bootstrap-4.3.1/js/pace.min.js"></script>
     </body>
 </html>
