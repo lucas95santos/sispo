@@ -48,5 +48,17 @@
                 </div>
             </a>
         </li>
+        <li class="nav-item side-bar-item">
+            <a id="link" class="nav-link side-bar-text-link" href="#" title="Ir para os relatórios">
+                <div class="row">
+                    <div class="col-auto">
+                        <img src="assets/icones/relatorio-sm.png" alt="Relatórios">
+                    </div>
+                    <div class="col-auto margin-item-sidebar">
+                        Relatórios
+                    </div>
+                </div>
+            </a>
+        </li>
     </ul>
 </div>

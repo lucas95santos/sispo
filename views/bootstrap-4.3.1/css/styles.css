@@ -559,6 +559,35 @@ section::before, section::after {
 
 /******************************    Fim Tela de Login     ********************************/
 
+/******************************    Dashboard     ********************************/
+
+.section-dashboard-movimentacao {
+    margin-top: 75px;
+    padding: 30px;
+    height: 700px;
+    width: 100%;
+}
+
+.container-movimentacao {
+    height: auto;
+}
+
+.dashboard-title {
+    color: #555;
+    font-family: Catamaran;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #999;
+}
+
+.dashboard-subtitle {
+    color: #777;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 .pace {
     -webkit-pointer-events: none;
     pointer-events: none;
